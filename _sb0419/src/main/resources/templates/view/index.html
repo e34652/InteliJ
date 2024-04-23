@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+     layout:decorate="~{layout/basic.html}">
+<!--basic.html을 데코레이션으로 사용-->
+<!--사실상 basic에 index의 fragment들이 출력되어 나오는 구조-->
+<!--fragment << 칸에 나온다, 조각의 이름 = content-->
+<!--이 내용이 basic 안에 나오게됨-->
+<div layout:fragment="content">
+  처음 페이지
+</div>
+
+<script layout:fragment="script" th:inline="javascript">
+  console.log("script.....................");
+</script>
